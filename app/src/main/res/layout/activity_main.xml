@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Verde_Dinheiro"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvBem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Bem Vindos ao Banco"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size35"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/ivBrasil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <ImageView
+        android:id="@+id/ivBrasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBem"
+        app:srcCompat="@drawable/pague_brasil" />
+
+    <Button
+        android:id="@+id/brtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="73dp"
+        android:text="Login"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/brtCadastro"
+        app:layout_constraintEnd_toEndOf="@+id/brtCadastro"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="@+id/brtCadastro"
+        app:layout_constraintTop_toBottomOf="@+id/ivBrasil"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/brtCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:text="Cadastro"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

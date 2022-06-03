@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#EEBF10</color>
+    <color name="purple_700">#024420</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="Verde_Dinheiro">#548B45</color>
+    <color name="Amarelo_Ouro">#E9C02A</color>
+    <color name="Verde_Bandeira">#035900</color>
+
+
+</resources>
