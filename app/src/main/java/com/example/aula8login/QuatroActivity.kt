@@ -1,5 +1,6 @@
 package com.example.aula8login
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -13,6 +14,12 @@ class QuatroActivity : AppCompatActivity() {
         binding = ActivityQuatroBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.brtVoltarInicio.setOnClickListener {
+            Intent(this, MainActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
         val email = intent.getStringExtra("EXTRA_EMAIL")
         val senha = intent.getStringExtra("EXTRA_SENHA")
         val loginString1 = "Bem vindo novamente $email ." +
@@ -21,7 +28,7 @@ class QuatroActivity : AppCompatActivity() {
 
         val extras = intent.extras
         val incomingNome = extras?.getString("EXTRA_NOME")
-        val incomingEmail2 = extras?.getString("EXTRA_NOME")
+        val incomingEmail2 = extras?.getString("EXTRA_EMAI")
         val incomingSenha2 = extras?.getString("EXTRA_SENHA2")
 
 

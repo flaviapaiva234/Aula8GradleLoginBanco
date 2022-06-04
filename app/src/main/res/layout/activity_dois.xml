@@ -14,9 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="79dp"
         android:text="Cadastro"
-        android:textColor="@color/white"
-        android:textSize="@dimen/text_size35"
-        android:textStyle="bold"
+        style="@style/TextStyle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -64,7 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:text="Salvar"
-        android:textColor="@color/black"
+        style="@style/ButtonStyle"
         app:layout_constraintBaseline_toBaselineOf="@+id/brtCancelarCadastro"
         app:layout_constraintEnd_toStartOf="@+id/brtCancelarCadastro"
         app:layout_constraintHorizontal_bias="0.0"
@@ -77,7 +75,7 @@
         android:layout_marginStart="34dp"
         android:layout_marginBottom="148dp"
         android:text="@string/cancelar"
-        android:textColor="@color/black"
+        style="@style/ButtonStyle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/etCadastrarSenha2"
         app:layout_constraintStart_toEndOf="@+id/brtSalvar" />

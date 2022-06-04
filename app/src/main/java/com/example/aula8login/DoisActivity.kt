@@ -29,7 +29,7 @@ class DoisActivity : AppCompatActivity() {
                 val bundle = Bundle()
                 with(bundle) {
                     putString("EXTRA_NOME", nome)
-                    putString("EXTRA_NOME", email2)
+                    putString("EXTRA_EMAIL", email2)
                     putString("EXTRA_SENHA2", senha2)
                     it.putExtras(bundle)
                 }
