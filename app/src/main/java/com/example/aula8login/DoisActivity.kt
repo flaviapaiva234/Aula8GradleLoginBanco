@@ -24,28 +24,23 @@ class DoisActivity : AppCompatActivity() {
             val nome = binding.etCadastrarNome.text.toString()
             val email2 = binding.etCadastrarEmail2.text.toString()
             val senha2 = binding.etCadastrarSenha2.text.toString()
+            val cidade = binding.etCidade.text.toString()
+            val pais = binding.etPais.text.toString()
 
             Intent(this, QuatroActivity::class.java).also {
                 val bundle = Bundle()
                 with(bundle) {
                     putString("EXTRA_NOME", nome)
-                    putString("EXTRA_EMAIL", email2)
+                    putString("EXTRA_EMAIL2", email2)
                     putString("EXTRA_SENHA2", senha2)
+                    putString("EXTRA_CIDADE", cidade)
+                    putString("EXTRA_PAIS", pais)
                     it.putExtras(bundle)
                 }
                 startActivity(it)
             }
 
 
-
         }
     }
-//    private fun validation(): Boolean {
-//        val isNotEmpty = (
-//                binding.etCadastrarNome.text.toString().isNotEmpty() &&
-//                binding.etCadastrarEmail2.text.toString().isNotEmpty() &&
-//                binding.etCadastrarSenha2.text.toString().isNotEmpty()
-//                )
-//        return isNotEmpty
-//    }
 }

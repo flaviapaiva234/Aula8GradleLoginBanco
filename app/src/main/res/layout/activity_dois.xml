@@ -10,37 +10,40 @@
 
     <TextView
         android:id="@+id/tvCadastro"
+        style="@style/TextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="79dp"
+        android:layout_marginTop="50dp"
         android:text="Cadastro"
-        style="@style/TextStyle"
+        app:layout_constraintBottom_toTopOf="@+id/etCadastrarSenha2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/etCadastrarNome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginBottom="116dp"
+        android:layout_marginBottom="80dp"
         android:hint="Cadastrar Nome"
         android:minHeight="48dp"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/etCadastrarSenha2"
+        app:layout_constraintEnd_toEndOf="@+id/etCadastrarSenha2"
         app:layout_constraintStart_toStartOf="@+id/etCadastrarSenha2" />
 
     <EditText
         android:id="@+id/etCadastrarEmail2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="20dp"
         android:hint="Cadastrar Email"
         android:minHeight="48dp"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/etCadastrarSenha2"
+        app:layout_constraintEnd_toEndOf="@+id/etCadastrarSenha2"
         app:layout_constraintStart_toStartOf="@+id/etCadastrarSenha2" />
 
     <EditText
@@ -53,8 +56,36 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.389" />
+
+    <EditText
+        android:id="@+id/etCidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Cadastrar Cidade"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/etCadastrarSenha2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etCadastrarSenha2"
+        app:layout_constraintTop_toBottomOf="@+id/etCadastrarSenha2" />
+
+    <EditText
+        android:id="@+id/etPais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Cadastrar Pais"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/etCidade"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="@+id/etCidade"
+        app:layout_constraintTop_toBottomOf="@+id/etCidade" />
 
     <Button
         android:id="@+id/brtSalvar"
