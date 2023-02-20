@@ -1,5 +1,6 @@
-# Aula8GradleLoginBanco
-Login de um App (Tema: Banco Pague Bem Brasil)
+# Aula 8 - Gradle Login Banco
+
+Login de um mini App (Tema: Banco Pague Bem Brasil)
 
 Mini App de Banco com uma tela inicial que tem dois botões: Login e Cadastro.
 
